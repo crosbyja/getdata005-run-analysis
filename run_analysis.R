@@ -42,4 +42,4 @@ colnames(mastermerge)
 mastermerge <- mastermerge[order(mastermerge$subjectid, mastermerge$activitydescription),]
 
 #create new data set to include variable average for each change in subject and activitydescription
-
+write.table(newdata, "tidydata.txt", sep=",")
