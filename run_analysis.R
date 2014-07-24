@@ -36,10 +36,17 @@ mastermerge <- mastermerge[,c(2,69,3:68)]
 #fix variable column names - remove parens and duplicate "body" in label
 colnames(mastermerge) <- gsub("BodyBody","Body",colnames(mastermerge), fixed = TRUE)
 colnames(mastermerge) <- gsub("()","",colnames(mastermerge), fixed = TRUE)
-colnames(mastermerge)
+colnames(mastermerge) <- gsub("std","Std",colnames(mastermerge), fixed = TRUE)
+colnames(mastermerge) <- gsub("mean","Mean",colnames(mastermerge), fixed = TRUE)
 
 #order by subject then activity for viewability
 mastermerge <- mastermerge[order(mastermerge$subjectid, mastermerge$activitydescription),]
+
+#generate new data set with mean by subjectid and activity
+newdata <- aggregate(mastermerge[,3:68], by=mastermerge[c("subjectid","activitydescription")], FUN=mean)
+
+#reorder newdata by subjectid then activity for viewability
+newdata<- newdata[order(newdata$subjectid, newdata$activitydescription),]
 
 #create new data set to include variable average for each change in subject and activitydescription
 write.table(newdata, "tidydata.txt", sep=",")
