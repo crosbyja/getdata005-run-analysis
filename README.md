@@ -21,8 +21,8 @@ for readability .
 names are fixed.
 11. Data is ordered by subjectid, then activitydescription in "mastermerge" for 
 readability.
-12. A new data set "newdata" is generated with the averages for each variable by subjectid and 
-activitydescription.
+12. A new data set "newdata" is generated with the averages for each variable by subjectid
+and activitydescription.
 13. Data is ordered in "newdata" by subjectid then activitydescription for readability.
 14. A new file tidydata.txt is written out to working directory to include all records 
 in "newdata".
