@@ -1,6 +1,6 @@
-Readme for Getdata-005 Course Project
+##Readme for Getdata-005 Course Project
 =======================
-Summary:
+###Summary:
 Experiments have been carried out with a group of 30 volunteers
 within an age bracket of 19-48 years. Each person performed six
 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING,
@@ -12,7 +12,7 @@ manually. The obtained dataset has been randomly partitioned into two
 sets, where 70% of the volunteers was selected for generating the
 training data and 30% the test data. 
 
-Input files-
+###Input files-
 x_train.txt: train data set
 y_train.txt: train data labels
 subject_train.txt: subject id for each measurement in the train data set
@@ -32,13 +32,13 @@ mastermerge: merged data frame to add activity description rather than activity 
 newdata: data frame result of averages of each variable by subjectid and activity 
 description
 
-Output:
+##Output:
 A tidy data set is generated that includes only measured variables of mean and standard
 deviation. The data is summarized by generating the averages for variable by subjectid and 
 activity description. The output 'tidydata.txt' is generated in the working directory.
 
 
-Application workflow:
+###Application workflow:
 1. Files x_train.txt, y_train.txt, and subject_train.txt are imported and column bound 
 together to create "traincomplete" data frame
 2. Files x_test.txt, y_test.txt, and subject_test.txt are imported and column bound 
