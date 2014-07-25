@@ -29,15 +29,21 @@ actvity_labels.txt: a file containing numerical id value for each activity descr
 
 features.txt: a file containing all measured variable names
 
-The following working data sets are generated:
+####The following working data sets are generated:
 traincomplete: column bound data frame of data from training data set
+
 testcomplete: column bound data frame of data from testing data set
+
 featurelabels: data set for measured variable column names
+
 activityids: a lookup table that contains activity id and description
+
 master: row bound data frame of traincomplete and testcomplete data frames
+
 mastermerge: merged data frame to add activity description rather than activity id
-newdata: data frame result of averages of each variable by subjectid and activity 
-description
+
+newdata: data frame result of averages of each variable by subjectid and activity description
+
 
 ###Output:
 A tidy data set is generated that includes only measured variables of mean and standard
