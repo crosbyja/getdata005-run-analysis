@@ -44,4 +44,4 @@ colnames(mastermerge) <- gsub("mean","Mean",colnames(mastermerge), fixed = TRUE)
 newdata <- aggregate(mastermerge[,3:68], by=mastermerge[c("subjectid","activitydescription")], FUN=mean)
 
 #create new data set to include variable average for each change in subject and activitydescription
-write.table(newdata, "tidydata.csv", sep=",", row.names = FALSE)
+write.table(newdata, "tidydata.txt", sep=",", row.names = FALSE)
