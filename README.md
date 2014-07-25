@@ -14,12 +14,19 @@ training data and 30% the test data.
 
 ###Input files:
 x_train.txt: train data set
+
 y_train.txt: train data labels
+
 subject_train.txt: subject id for each measurement in the train data set
+
 x_test.txt: test data set
+
 y_test.txt: test data labales
+
 subject_test.txt: subject id for each measurement in the test data set
+
 actvity_labels.txt: a file containing numerical id value for each activity description
+
 features.txt: a file containing all measured variable names
 
 The following working data sets are generated:
