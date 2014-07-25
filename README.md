@@ -1,4 +1,4 @@
-##Readme for Getdata-005 Course Project
+Readme for Getdata-005 Course Project
 =======================
 ###Summary:
 Experiments have been carried out with a group of 30 volunteers
